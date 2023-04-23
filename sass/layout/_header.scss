@@ -1,0 +1,134 @@
+.header-wrapper {
+  max-width: $content-width;
+  margin: auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 136px;
+  align-items: center;
+  height: 90px;
+  @media only screen and (max-width: $breakpoints_desktop) {
+
+  }
+  @media only screen and (max-width: $breakpoints_tablet) {
+
+  }
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__navbar {
+  ul {
+    display: flex;
+    gap: 32px;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+  @media only screen and (max-width: $breakpoints_tablet) {
+    display: none;
+  }
+}
+
+.header__burger {
+  display: none;
+  transition: 0.3s all linear;
+  position: relative;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+
+  .burger_line {
+    background-color: $color-primary;
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+
+}
+
+.burger_line_one {
+    top: 0;
+}
+
+.burger_line_two,
+.burger_line_three {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger_line_four {
+    bottom: 0;
+}
+  @media only screen and (max-width: $breakpoints_tablet) {
+    display: block;
+  }
+}
+
+.header_dark {
+  background-color: transparent;
+
+  .header__logo {
+    .header__title {
+      color: $color-primary;
+    }
+
+    .header__subtitle {
+      color: $color-light-xl;
+    }
+
+    &:hover {
+      .header__title,
+      .header__subtitle {
+        color: $color-primary-light;
+      }
+    }
+
+    &:active {
+      .header__title {
+        color: $color-primary;
+      }
+
+      .header__subtitle {
+        color: $color-light-xl;
+      }
+    }
+  }
+}
+
+.header_light {
+  background-color: $color-light-xl;
+
+  .header__logo {
+    .header__title {
+      color: $color-dark-l;
+    }
+
+    .header__subtitle {
+      color: $color-dark-3xl;
+    }
+
+    &:hover {
+      .header__title,
+      .header__subtitle {
+        color: $color-dark-m;
+      }
+    }
+
+    &:active {
+      .header__title {
+        color: $color-dark-l;
+      }
+
+      .header__subtitle {
+        color: $color-dark-xl;
+      }
+    }
+  }
+}

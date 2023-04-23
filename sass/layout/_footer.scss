@@ -1,0 +1,99 @@
+.footer {
+  padding: 100px 136px;
+  background-color: $color-secondary;
+
+  .container__first {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 34px;
+    .container__title {
+      @extend %footer__container;
+      color: $color-light-xl;
+      row-gap: 20px;
+      @media only screen and (max-width: $breakpoints_desktop) {
+      }
+      @media only screen and (max-width: $breakpoints_tablet) {
+      }
+    }
+
+    .container_lists {
+      display: flex;
+      column-gap: 16px;
+      .container__list {
+        min-width: 221px;
+        @extend %footer__container;
+        color: $color-light-xl;
+        row-gap: 10px;
+      }
+    }
+  }
+
+  .container__subscribe {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 36px 0;
+    row-gap: 16px;
+    .subscribe__text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    .subscribe__form {
+      display: flex;
+      align-items: center;
+      position: relative;
+      min-width: 458px;
+      justify-content: flex-end;
+      .subscribe__input {
+        min-width: 458px;
+        position: absolute;
+        padding: 15px;
+        padding-right: 130px;
+        font-size: 15px;
+        background-color: $color-light-l;
+        border-radius: 12px;
+        z-index: 1;
+        outline: none;
+        &:active,
+        &:hover,
+        &:focus {
+          outline: 1px;
+          outline-offset: 0;
+        }
+      }
+      .button {
+        border: none;
+        position: relative;
+        z-index: 2;
+        padding: 14px;
+      }
+    }
+  }
+
+  .container__devider {
+    height: 2px;
+  }
+  .container__last {
+    padding-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    .container__license {
+      @extend %font-paragraph-l;
+    }
+    .content__icons {
+      display: flex;
+      column-gap: 20px;
+      .content__icon{
+        text-align: center;
+        width: 24px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $breakpoints_desktop) {
+
+  }
+  @media only screen and (max-width: $breakpoints_tablet) {
+
+  }
+}

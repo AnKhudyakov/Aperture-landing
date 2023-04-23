@@ -9,7 +9,6 @@ $color-dark-xl: #4c4c4c;
 $color-dark-2xl: #444444;
 $color-dark-3xl: #292929;
 
-
 $color-primary: #181818;
 $color-secondary: #000000;
 $color-primary-light: #b2b2b2;
@@ -23,3 +22,21 @@ $breakpoints_mobile: 400px;
 $padding_side: 136px;
 $padding_destop: 80px;
 $padding_tablet: 50px;
+
+//Animation
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

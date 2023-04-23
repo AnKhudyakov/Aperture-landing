@@ -31,4 +31,23 @@
   flex-direction: column;
 }
 
+%amination-fadeIn-first {
+  -webkit-animation-duration: 1s;
+   animation-duration: 1s;
+   -webkit-animation-name: fadeIn;
+   animation-name: fadeIn;
+}
 
+%amination-fadeIn-second {
+  -webkit-animation-duration: 5s;
+   animation-duration: 5s;
+   -webkit-animation-name: fadeIn;
+   animation-name: fadeIn;
+}
+
+%amination-fadeIn-third {
+  -webkit-animation-duration: 10s;
+   animation-duration: 10s;
+   -webkit-animation-name: fadeIn;
+   animation-name: fadeIn;
+}

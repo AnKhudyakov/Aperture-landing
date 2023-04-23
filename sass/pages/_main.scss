@@ -10,6 +10,7 @@
   width: 100%;
   margin-top: 85px;
   background: url("../../assets/images/bg-start.png") center / cover no-repeat;
+  @extend %amination-fadeIn-second;
   background-attachment: fixed;
   .start__wrapper {
     width: 100%;
@@ -33,14 +34,15 @@
       .content__subtitle {
         color: $color-dark-s;
         margin-bottom: 1px;
+        @extend %amination-fadeIn-first;
       }
 
       .content__title {
         text-align: center;
         color: $color-light-xl;
         margin-bottom: 18px;
+        @extend %amination-fadeIn-second;
         @media only screen and (max-width: $breakpoints_tablet) {
-
         }
       }
 
@@ -49,6 +51,7 @@
         margin: 0 auto 14px;
         @extend %font-paragraph-l;
         color: $color-dark-s;
+        @extend %amination-fadeIn-third;
         @media only screen and (max-width: $breakpoints_tablet) {
         }
       }
@@ -77,7 +80,6 @@
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-
     }
   }
 }
@@ -90,6 +92,7 @@
       text-align: center;
       color: $color-light-xl;
       margin-bottom: 40px;
+      animation-duration: 3s;
       .container__subtitle {
         margin-top: 14px;
         color: $color-dark-s;
@@ -102,11 +105,13 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
+      .card {
+        animation-duration: 3s;
+      }
       @media only screen and (max-width: $breakpoints_tablet) {
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-
     }
   }
 
@@ -182,7 +187,6 @@
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-
     }
   }
 }
@@ -209,6 +213,7 @@
       .content__title {
         padding: 173px 100px 152px;
         text-align: left;
+        animation-duration: 2s;
         .content__subtitle {
           color: $color-dark-s;
           margin-bottom: 6px;
@@ -233,6 +238,7 @@
       .content__image {
         background: url("../../assets/images/gear.png") center / cover no-repeat;
         padding: 484px 40px 40px;
+        animation-duration: 2s;
       }
       .content__params {
         display: flex;
@@ -251,14 +257,11 @@
       }
 
       @media only screen and (max-width: $breakpoints_desktop) {
- 
       }
       @media only screen and (max-width: $breakpoints_tablet) {
- 
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-
     }
   }
 }
@@ -275,7 +278,6 @@
     justify-content: center;
     margin: 0 auto;
     @media only screen and (max-width: $breakpoints_desktop) {
-
     }
   }
   .monstera__container {
@@ -301,7 +303,6 @@
           @extend %font-paragraph-l;
           color: $color-dark-s;
           @media only screen and (max-width: $breakpoints_tablet) {
-
           }
         }
       }
@@ -323,14 +324,11 @@
       }
 
       @media only screen and (max-width: $breakpoints_desktop) {
- 
       }
       @media only screen and (max-width: $breakpoints_tablet) {
-
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-
     }
   }
 }
@@ -346,7 +344,6 @@
     justify-content: center;
     margin: 0 auto;
     @media only screen and (max-width: $breakpoints_desktop) {
-
     }
   }
   .clients__container {
@@ -368,7 +365,6 @@
           @extend %font-paragraph-l;
           color: $color-dark-s;
           @media only screen and (max-width: $breakpoints_tablet) {
-
           }
         }
       }
@@ -392,7 +388,6 @@
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-
     }
   }
 }
@@ -458,11 +453,9 @@
         padding: 180px 42px 40px;
       }
       @media only screen and (max-width: $breakpoints_tablet) {
-
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-
     }
   }
 }
@@ -478,7 +471,6 @@
     justify-content: center;
     margin: 0 auto;
     @media only screen and (max-width: $breakpoints_desktop) {
-
     }
   }
   .help__container {
@@ -489,6 +481,7 @@
 
       .content__title {
         text-align: center;
+        animation-duration: 3s;
         .content__subtitle {
           margin: 0 auto;
           max-width: 572px;
@@ -525,7 +518,7 @@
       @media only screen and (max-width: $breakpoints_desktop) {
       }
       @media only screen and (max-width: $breakpoints_tablet) {
-          padding: 70px $padding_tablet 60px;
+        padding: 70px $padding_tablet 60px;
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {

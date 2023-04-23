@@ -31,6 +31,43 @@
   flex-direction: column;
 }
 
+.start .start__container .content .content__subtitle {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.start .start__container .content .content__title, .start {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.start .start__container .content .content__text {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @font-face {
   font-family: "Poppins";
   font-style: normal;
@@ -563,6 +600,7 @@ h6 {
   text-align: center;
   color: #ffffff;
   margin-bottom: 40px;
+  animation-duration: 3s;
 }
 .areas .areas__container .container__title .container__subtitle {
   margin-top: 14px;
@@ -572,6 +610,9 @@ h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+}
+.areas .areas__container .container__cards .card {
+  animation-duration: 3s;
 }
 @media only screen and (max-width: 1050px) {
   .areas {
@@ -649,6 +690,7 @@ h6 {
 .gear .gear__container .content .content__title {
   padding: 173px 100px 152px;
   text-align: left;
+  animation-duration: 2s;
 }
 .gear .gear__container .content .content__title .content__subtitle {
   color: #c0c0c0;
@@ -672,6 +714,7 @@ h6 {
 .gear .gear__container .content .content__image {
   background: url("../../assets/images/gear.png") center/cover no-repeat;
   padding: 484px 40px 40px;
+  animation-duration: 2s;
 }
 .gear .gear__container .content .content__params {
   display: flex;
@@ -844,6 +887,7 @@ h6 {
 }
 .help .help__container .content .content__title {
   text-align: center;
+  animation-duration: 3s;
 }
 .help .help__container .content .content__title .content__subtitle {
   margin: 0 auto;

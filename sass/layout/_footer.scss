@@ -24,6 +24,9 @@
         @extend %footer__container;
         color: $color-light-xl;
         row-gap: 10px;
+        .container_link{
+          max-width: fit-content;
+        }
       }
     }
   }

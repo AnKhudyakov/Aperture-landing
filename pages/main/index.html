@@ -36,7 +36,7 @@
                 >
               </li>
               <li>
-                <a href="#images" class="navbar-link navbar-link_light"
+                <a href="#sunset" class="navbar-link navbar-link_light"
                   >Featured images</a
                 >
               </li>
@@ -46,7 +46,7 @@
                 >
               </li>
               <li>
-                <a href="#contacts" class="navbar-link navbar-link_light"
+                <a href="#contact" class="navbar-link navbar-link_light"
                   >Contact</a
                 >
               </li>
@@ -56,62 +56,60 @@
       </div>
     </header>
     <main>
-      <section class="start">
-        <div class="start__wrapper">
-          <div class="start__container">
-            <div class="content">
-              <h5 class="content__subtitle">Photographer & Filmmaker</h5>
-              <div class="content__title">
-                <h1>Aperture Studios</h1>
+      <section class="start" id="start">
+        <div class="start__bg-wrapper"></div>
+        <div class="start__container">
+          <div class="content">
+            <h5 class="content__subtitle">Photographer & Filmmaker</h5>
+            <div class="content__title">
+              <h1>Aperture Studios</h1>
+            </div>
+            <p class="content__text">
+              Welcome to Aperture Studios – a premier photographer and filmmaker
+              studio that specializes in capturing life's most precious moments.
+              With over 10 years of experience, we pride ourselves on delivering
+              stunning visuals and exceptional service to all of our clients.
+            </p>
+            <div class="content__params">
+              <div class="content__param">
+                <picture>
+                  <img
+                    class="content__icon"
+                    src="../../assets/icons/Shutter.svg"
+                    alt="Shutter"
+                  />
+                </picture>
+                <p class="content__param_title">1/2000s</p>
               </div>
-              <p class="content__text">
-                Welcome to Aperture Studios – a premier photographer and
-                filmmaker studio that specializes in capturing life's most
-                precious moments. With over 10 years of experience, we pride
-                ourselves on delivering stunning visuals and exceptional service
-                to all of our clients.
-              </p>
-              <div class="content__params">
-                <div class="content__param">
-                  <picture>
-                    <img
-                      class="content__icon"
-                      src="../../assets/icons/Shutter.svg"
-                      alt="Shutter"
-                    />
-                  </picture>
-                  <p class="content__param_title">1/2000s</p>
-                </div>
-                <div class="content__param">
-                  <picture>
-                    <img
-                      class="content__icon"
-                      src="../../assets/icons/Aperture.svg"
-                      alt="Aperture"
-                    />
-                  </picture>
-                  <p class="content__param_title">f/11</p>
-                </div>
-                <div class="content__param">
-                  <picture>
-                    <img
-                      class="content__icon"
-                      src="../../assets/icons/ISO.svg"
-                      alt="ISO"
-                    />
-                  </picture>
-                  <p class="content__param_title">100</p>
-                </div>
-                <div class="content__param">
-                  <picture>
-                    <img
-                      class="content__icon"
-                      src="../../assets/icons/Location.svg"
-                      alt="Location"
-                    />
-                  </picture>
-                  <p class="content__param_title">Iceland</p>
-                </div>
+              <div class="content__param">
+                <picture>
+                  <img
+                    class="content__icon"
+                    src="../../assets/icons/Aperture.svg"
+                    alt="Aperture"
+                  />
+                </picture>
+                <p class="content__param_title">f/11</p>
+              </div>
+              <div class="content__param">
+                <picture>
+                  <img
+                    class="content__icon"
+                    src="../../assets/icons/ISO.svg"
+                    alt="ISO"
+                  />
+                </picture>
+                <p class="content__param_title">100</p>
+              </div>
+              <div class="content__param">
+                <picture>
+                  <img
+                    class="content__icon"
+                    src="../../assets/icons/Location.svg"
+                    alt="Location"
+                  />
+                </picture>
+                <p class="content__param_title">Iceland</p>
               </div>
             </div>
           </div>
@@ -126,7 +124,7 @@
             </h4>
           </div>
           <div class="container__cards">
-            <div class="card">
+            <div class="card" id="product">
               <picture class="card__image">
                 <img src="../../assets/images/product.png" alt="product" />
               </picture>
@@ -138,7 +136,7 @@
               </p>
               <button class="button">Read more</button>
             </div>
-            <div class="card">
+            <div class="card" id="arch">
               <picture class="card__image">
                 <img
                   src="../../assets/images/architecture.png"
@@ -154,7 +152,7 @@
               </p>
               <button class="button">Read more</button>
             </div>
-            <div class="card">
+            <div class="card" id="drone">
               <picture class="card__image">
                 <img src="../../assets/images/drone.png" alt="drone" />
               </picture>
@@ -168,7 +166,7 @@
               </p>
               <button class="button">Read more</button>
             </div>
-            <div class="card">
+            <div class="card" id="wildlife">
               <picture class="card__image">
                 <img src="../../assets/images/wildlife.png" alt="wildlife" />
               </picture>
@@ -184,7 +182,7 @@
           </div>
         </div>
       </section>
-      <section class="sunset">
+      <section class="sunset" id="sunset">
         <div class="sunset__wrapper">
           <div class="sunset__container">
             <div class="content">
@@ -305,7 +303,7 @@
           </div>
         </div>
       </section>
-      <section class="monstera">
+      <section class="monstera" id="monstera">
         <div class="monstera__wrapper">
           <div class="monstera__container">
             <div class="content">
@@ -501,7 +499,7 @@
       <div class="footer" id="contact">
         <div class="container__first">
           <div class="container__title">
-            <a href="#no_scroll">
+            <a href="#start">
               <picture>
                 <img
                   class="header__logo"
@@ -517,21 +515,29 @@
           <div class="container_lists">
             <div class="container__list">
               <h5>Business areas</h5>
-              <h6>Product Photography</h6>
-              <h6>Architecture Photography</h6>
-              <h6>Drone Photography</h6>
-              <h6>Wildlife Photography</h6>
+              <a href="#product" class="container_link">
+                <h6>Product Photography</h6>
+              </a>
+              <a href="#arch" class="container_link"
+                ><h6>Architecture Photography</h6>
+              </a>
+              <a href="#drone" class="container_link"
+                ><h6>Drone Photography</h6>
+              </a>
+              <a href="#wildlife" class="container_link"
+                ><h6>Wildlife Photography</h6>
+              </a>
             </div>
             <div class="container__list">
               <h5>Pages</h5>
-              <a href="#gear" class="container-link"><h6>Gear cage</h6> </a>
-              <a href="#image" class="container-link"
+              <a href="#gear" class="container_link"><h6>Gear cage</h6></a>
+              <a href="#monstera" class="container_link"
                 ><h6>Featured images</h6>
               </a>
-              <a href="#contact" class="container-link"><h6>Contact</h6> </a>
-              <a href="#gear" class="container-link"><h6>Style guide</h6> </a>
-              <a href="#gear" class="container-link"><h6>Instructions</h6> </a>
-              <a href="#gear" class="container-link"><h6>Changelog</h6> </a>
+              <a href="#contact" class="container_link"><h6>Contact</h6></a>
+              <a href="#areas" class="container_link"><h6>Style guide</h6></a>
+              <!-- <a href="#gear" class="container-link"><h6>Instructions</h6> </a> -->
+              <!-- <a href="#gear" class="container-link"><h6>Changelog</h6> </a> -->
             </div>
           </div>
         </div>

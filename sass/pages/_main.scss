@@ -27,7 +27,7 @@
       text-align: center;
       flex-direction: column;
       //padding: 466px 0 41px;
-      padding: 407px 0 100px;
+      padding: 407px 0 41px;
       overflow: hidden;
 
       .content__subtitle {
@@ -40,6 +40,7 @@
         color: $color-light-xl;
         margin-bottom: 18px;
         @media only screen and (max-width: $breakpoints_tablet) {
+
         }
       }
 
@@ -70,19 +71,19 @@
       }
 
       @media only screen and (max-width: $breakpoints_desktop) {
+        padding: 260px 0 41px;
       }
       @media only screen and (max-width: $breakpoints_tablet) {
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-      flex-direction: column;
-      align-items: center;
+
     }
   }
 }
 
 .areas {
-  padding: 113px 136px 100px;
+  padding: 113px $padding_side 100px;
   background-color: $color-secondary;
   .areas__container {
     .container__title {
@@ -105,17 +106,15 @@
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-      padding-top: 0;
-      margin-left: 0px;
+
     }
   }
 
   @media only screen and (max-width: $breakpoints_desktop) {
-    flex-direction: column-reverse;
-    align-items: center;
+    padding: 113px $padding_destop 100px;
   }
   @media only screen and (max-width: $breakpoints_tablet) {
-    padding: 42px 25px;
+    padding: 90px $padding_tablet 100px;
   }
 }
 
@@ -183,8 +182,7 @@
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-      flex-direction: column;
-      align-items: center;
+
     }
   }
 }
@@ -224,6 +222,12 @@
           @media only screen and (max-width: $breakpoints_tablet) {
           }
         }
+        @media only screen and (max-width: $breakpoints_desktop) {
+          padding: 150px 100px 152px;
+        }
+        @media only screen and (max-width: $breakpoints_tablet) {
+          padding: 120px 50px 120px;
+        }
       }
 
       .content__image {
@@ -254,8 +258,7 @@
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-      flex-direction: column;
-      align-items: center;
+
     }
   }
 }
@@ -327,8 +330,7 @@
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-      flex-direction: column;
-      align-items: center;
+
     }
   }
 }
@@ -383,15 +385,14 @@
       }
 
       @media only screen and (max-width: $breakpoints_desktop) {
-
+        padding: 113px 102px 140px;
       }
       @media only screen and (max-width: $breakpoints_tablet) {
-
+        padding: 80px $padding_tablet 100px;
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-      flex-direction: column;
-      align-items: center;
+
     }
   }
 }
@@ -454,15 +455,14 @@
       }
 
       @media only screen and (max-width: $breakpoints_desktop) {
-
+        padding: 180px 42px 40px;
       }
       @media only screen and (max-width: $breakpoints_tablet) {
 
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
-      flex-direction: column;
-      align-items: center;
+
     }
   }
 }
@@ -505,8 +505,8 @@
           margin: 14px 0 20px;
           @extend %font-paragraph-l;
           color: $color-dark-s;
-          @media only screen and (max-width: $breakpoints_tablet) {
-
+          @media only screen and (max-width: $breakpoints_desktop) {
+            padding: 100px;
           }
         }
       }
@@ -525,7 +525,7 @@
       @media only screen and (max-width: $breakpoints_desktop) {
       }
       @media only screen and (max-width: $breakpoints_tablet) {
-
+          padding: 70px $padding_tablet 60px;
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {

@@ -219,12 +219,6 @@ h6 {
   border-color: #181818;
   background-color: #181818;
 }
-@media only screen and (max-width: 720px) {
-  .button {
-    margin: 0 auto;
-  }
-}
-
 .card {
   height: 600px;
   position: relative;
@@ -268,9 +262,9 @@ h6 {
   border-color: #181818;
   background-color: #181818;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1050px) {
   .card {
-    text-align: center;
+    height: 350px;
   }
 }
 
@@ -286,6 +280,17 @@ h6 {
   align-items: center;
   height: 90px;
 }
+@media only screen and (max-width: 1050px) {
+  .header__container {
+    padding: 0 80px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .header__container {
+    padding: 0 50px;
+  }
+}
+
 .header__logo {
   display: flex;
   flex-direction: column;
@@ -298,12 +303,6 @@ h6 {
 .header__navbar li {
   margin-bottom: 6px;
 }
-@media only screen and (max-width: 720px) {
-  .header__navbar {
-    display: none;
-  }
-}
-
 .header__burger {
   display: none;
   transition: 0.3s all linear;
@@ -330,12 +329,6 @@ h6 {
 .header__burger .burger_line_four {
   bottom: 0;
 }
-@media only screen and (max-width: 720px) {
-  .header__burger {
-    display: block;
-  }
-}
-
 .header_dark {
   background-color: transparent;
 }
@@ -401,6 +394,11 @@ h6 {
 .footer .container__first .container_lists .container__list .container_link {
   max-width: fit-content;
 }
+@media only screen and (max-width: 1050px) {
+  .footer .container__first .container_lists .container__list {
+    min-width: 180px;
+  }
+}
 .footer .container__subscribe {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -411,6 +409,11 @@ h6 {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+}
+@media only screen and (max-width: 850px) {
+  .footer .container__subscribe .subscribe__text {
+    margin-bottom: 20px;
+  }
 }
 .footer .container__subscribe .subscribe__form {
   display: flex;
@@ -431,14 +434,41 @@ h6 {
   outline: none;
 }
 .footer .container__subscribe .subscribe__form .subscribe__input:active, .footer .container__subscribe .subscribe__form .subscribe__input:hover, .footer .container__subscribe .subscribe__form .subscribe__input:focus {
-  outline: 1px;
-  outline-offset: 0;
+  outline: none;
+}
+@media only screen and (max-width: 1050px) {
+  .footer .container__subscribe .subscribe__form .subscribe__input {
+    min-width: 400px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .footer .container__subscribe .subscribe__form .subscribe__input {
+    top: 0;
+    min-width: 340px;
+  }
 }
 .footer .container__subscribe .subscribe__form .button {
   border: none;
   position: relative;
   z-index: 2;
   padding: 14px;
+}
+@media only screen and (max-width: 850px) {
+  .footer .container__subscribe .subscribe__form .button {
+    margin-left: 232px;
+    margin-top: 2px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .footer .container__subscribe .subscribe__form {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .footer .container__subscribe {
+    display: block;
+    text-align: center;
+  }
 }
 .footer .container__devider {
   height: 2px;
@@ -456,6 +486,17 @@ h6 {
   text-align: center;
   width: 24px;
 }
+@media only screen and (max-width: 1050px) {
+  .footer {
+    padding: 80px 80px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .footer {
+    padding: 70px 50px;
+  }
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -481,7 +522,7 @@ h6 {
 .start .start__container .content {
   text-align: center;
   flex-direction: column;
-  padding: 407px 0 100px;
+  padding: 407px 0 41px;
   overflow: hidden;
 }
 .start .start__container .content .content__subtitle {
@@ -509,13 +550,11 @@ h6 {
   column-gap: 6px;
   align-items: center;
 }
-@media only screen and (max-width: 980px) {
-  .start .start__container {
-    flex-direction: column;
-    align-items: center;
+@media only screen and (max-width: 1050px) {
+  .start .start__container .content {
+    padding: 260px 0 41px;
   }
 }
-
 .areas {
   padding: 113px 136px 100px;
   background-color: #000000;
@@ -534,21 +573,14 @@ h6 {
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
-@media only screen and (max-width: 980px) {
-  .areas .areas__container {
-    padding-top: 0;
-    margin-left: 0px;
+@media only screen and (max-width: 1050px) {
+  .areas {
+    padding: 113px 80px 100px;
   }
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 850px) {
   .areas {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-}
-@media only screen and (max-width: 720px) {
-  .areas {
-    padding: 42px 25px;
+    padding: 90px 50px 100px;
   }
 }
 
@@ -596,13 +628,6 @@ h6 {
   column-gap: 6px;
   align-items: center;
 }
-@media only screen and (max-width: 980px) {
-  .sunset .sunset__container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 .gear {
   width: 100%;
   background-color: #000000;
@@ -634,6 +659,16 @@ h6 {
   margin: 14px 0 20px;
   color: #c0c0c0;
 }
+@media only screen and (max-width: 1050px) {
+  .gear .gear__container .content .content__title {
+    padding: 150px 100px 152px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .gear .gear__container .content .content__title {
+    padding: 120px 50px 120px;
+  }
+}
 .gear .gear__container .content .content__image {
   background: url("../../assets/images/gear.png") center/cover no-repeat;
   padding: 484px 40px 40px;
@@ -648,13 +683,6 @@ h6 {
   column-gap: 6px;
   align-items: center;
 }
-@media only screen and (max-width: 980px) {
-  .gear .gear__container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 .monstera {
   width: 100%;
   background: url("../../assets/images/monstera.png") center/cover no-repeat;
@@ -699,13 +727,6 @@ h6 {
   column-gap: 6px;
   align-items: center;
 }
-@media only screen and (max-width: 980px) {
-  .monstera .monstera__container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 .clients {
   width: 100%;
   background-color: #000000;
@@ -745,13 +766,16 @@ h6 {
   column-gap: 6px;
   align-items: center;
 }
-@media only screen and (max-width: 980px) {
-  .clients .clients__container {
-    flex-direction: column;
-    align-items: center;
+@media only screen and (max-width: 1050px) {
+  .clients .clients__container .content {
+    padding: 113px 102px 140px;
   }
 }
-
+@media only screen and (max-width: 850px) {
+  .clients .clients__container .content {
+    padding: 80px 50px 100px;
+  }
+}
 .starfall {
   width: 100%;
   background: url("../../assets/images/starfall.png") center/cover no-repeat;
@@ -796,13 +820,11 @@ h6 {
   column-gap: 6px;
   align-items: center;
 }
-@media only screen and (max-width: 980px) {
-  .starfall .starfall__container {
-    flex-direction: column;
-    align-items: center;
+@media only screen and (max-width: 1050px) {
+  .starfall .starfall__container .content {
+    padding: 180px 42px 40px;
   }
 }
-
 .help {
   width: 100%;
   background-color: #000000;
@@ -839,6 +861,11 @@ h6 {
   margin: 14px 0 20px;
   color: #c0c0c0;
 }
+@media only screen and (max-width: 1050px) {
+  .help .help__container .content .content__title .content__text {
+    padding: 100px;
+  }
+}
 .help .help__container .content .content__icons {
   display: flex;
   justify-content: space-between;
@@ -849,7 +876,12 @@ h6 {
   column-gap: 6px;
   align-items: center;
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 850px) {
+  .help .help__container .content {
+    padding: 70px 50px 60px;
+  }
+}
+@media only screen and (max-width: 1050px) {
   .help .help__container {
     flex-direction: column;
     align-items: center;

@@ -1,5 +1,5 @@
 .footer {
-  padding: 100px 136px;
+  padding: 100px $padding_side;
   background-color: $color-secondary;
 
   .container__first {
@@ -27,6 +27,10 @@
         .container_link{
           max-width: fit-content;
         }
+        @media only screen and (max-width: $breakpoints_desktop) {
+          min-width: 180px;
+        }
+
       }
     }
   }
@@ -40,6 +44,9 @@
       display: flex;
       flex-direction: column;
       row-gap: 20px;
+      @media only screen and (max-width: $breakpoints_tablet) {
+        margin-bottom: 20px;
+      }
     }
     .subscribe__form {
       display: flex;
@@ -60,8 +67,16 @@
         &:active,
         &:hover,
         &:focus {
-          outline: 1px;
-          outline-offset: 0;
+          outline: none;
+         // outline-offset: 0;
+        }
+        @media only screen and (max-width: $breakpoints_desktop) {
+          min-width: 400px;
+        }
+        @media only screen and (max-width: $breakpoints_tablet) {
+          top:0;
+          
+          min-width: 340px;
         }
       }
       .button {
@@ -69,7 +84,18 @@
         position: relative;
         z-index: 2;
         padding: 14px;
+        @media only screen and (max-width: $breakpoints_tablet) {
+          margin-left:  232px;
+          margin-top: 2px;
+        }
       }
+      @media only screen and (max-width: $breakpoints_tablet) {
+        justify-content: center;
+      }
+    }
+    @media only screen and (max-width: $breakpoints_tablet) {
+      display: block;
+      text-align: center;
     }
   }
 
@@ -94,9 +120,9 @@
   }
 
   @media only screen and (max-width: $breakpoints_desktop) {
-
+    padding: 80px $padding_destop;
   }
   @media only screen and (max-width: $breakpoints_tablet) {
-
+    padding: 70px $padding_tablet;
   }
 }

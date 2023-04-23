@@ -6,14 +6,14 @@
 .header__container {
   display: flex;
   justify-content: space-between;
-  padding: 0 136px;
+  padding: 0 $padding_side;
   align-items: center;
   height: 90px;
   @media only screen and (max-width: $breakpoints_desktop) {
-
+    padding: 0 $padding_destop;
   }
   @media only screen and (max-width: $breakpoints_tablet) {
-
+    padding: 0 $padding_tablet;
   }
 }
 
@@ -32,7 +32,7 @@
     margin-bottom: 6px;
   }
   @media only screen and (max-width: $breakpoints_tablet) {
-    display: none;
+   // display: none;
   }
 }
 
@@ -67,7 +67,7 @@
     bottom: 0;
 }
   @media only screen and (max-width: $breakpoints_tablet) {
-    display: block;
+    //display: block;
   }
 }
 

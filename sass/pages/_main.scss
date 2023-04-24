@@ -3,6 +3,7 @@
   position: fixed;
   top: 0px;
   background-color: $color-primary;
+  animation-duration: 2s;
   z-index: 999;
 }
 
@@ -71,16 +72,26 @@
             @extend %font-param-title;
           }
         }
+        @media only screen and (max-width: $breakpoints_tablet) {
+          margin-right: 20px;
+        }
+        @media only screen and (max-width: $breakpoints_mobile) {
+          margin: 0 auto;
+        }
       }
 
       @media only screen and (max-width: $breakpoints_desktop) {
-        padding: 260px 0 41px;
+        padding: 260px 0px 41px;
       }
       @media only screen and (max-width: $breakpoints_tablet) {
+        padding: 260px $padding_mobile 41px;
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
     }
+  }
+  @media only screen and (max-width: $breakpoints_mobile) {
+    margin-top: 60px;
   }
 }
 
@@ -109,6 +120,8 @@
         animation-duration: 3s;
       }
       @media only screen and (max-width: $breakpoints_tablet) {
+        display: flex;
+        flex-direction: column;
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
@@ -116,16 +129,19 @@
   }
 
   @media only screen and (max-width: $breakpoints_desktop) {
-    padding: 113px $padding_destop 100px;
+    padding: 90px $padding_destop;
   }
   @media only screen and (max-width: $breakpoints_tablet) {
-    padding: 90px $padding_tablet 100px;
+    padding: 70px $padding_tablet;
+  }
+  @media only screen and (max-width: $breakpoints_mobile) {
+    padding: 20px $padding_mobile;
   }
 }
 
 .sunset {
   width: 100%;
-  background: url("../../assets/images/bg-sunset.png") center / cover no-repeat;
+  background: url("../../assets/images/bg-sunset.jpg") center / cover no-repeat;
   background-attachment: fixed;
   .sunset__wrapper {
     width: 100%;
@@ -142,7 +158,7 @@
     .content {
       text-align: right;
       flex-direction: column;
-      padding: 260px 42px 40px;
+      padding: 260px 40px 40px;
       overflow: hidden;
 
       .content__title {
@@ -160,7 +176,8 @@
           margin: 0 0 204px auto;
           @extend %font-paragraph-l;
           color: $color-dark-s;
-          @media only screen and (max-width: $breakpoints_tablet) {
+          @media only screen and (max-width: $breakpoints_mobile) {
+            margin: 0 0 24px auto;
           }
         }
       }
@@ -183,7 +200,8 @@
 
       @media only screen and (max-width: $breakpoints_desktop) {
       }
-      @media only screen and (max-width: $breakpoints_tablet) {
+      @media only screen and (max-width: $breakpoints_mobile) {
+        padding: 440px $padding_mobile 40px;
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
@@ -228,10 +246,13 @@
           }
         }
         @media only screen and (max-width: $breakpoints_desktop) {
-          padding: 150px 100px 152px;
+          padding: 150px 80px 152px;
         }
         @media only screen and (max-width: $breakpoints_tablet) {
-          padding: 120px 50px 120px;
+          padding: 80px 50px 80px;
+        }
+        @media only screen and (max-width: $breakpoints_mobile) {
+          padding: $padding_mobile;
         }
       }
 
@@ -239,6 +260,9 @@
         background: url("../../assets/images/gear.png") center / cover no-repeat;
         padding: 484px 40px 40px;
         animation-duration: 2s;
+        @media only screen and (max-width: $breakpoints_mobile) {
+          padding: 484px $padding_mobile 40px;
+        }
       }
       .content__params {
         display: flex;
@@ -259,6 +283,7 @@
       @media only screen and (max-width: $breakpoints_desktop) {
       }
       @media only screen and (max-width: $breakpoints_tablet) {
+        display: block;
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
@@ -268,7 +293,7 @@
 
 .monstera {
   width: 100%;
-  background: url("../../assets/images/monstera.png") center / cover no-repeat;
+  background: url("../../assets/images/monstera.jpg") center / cover no-repeat;
   background-attachment: fixed;
   .monstera__wrapper {
     width: 100%;
@@ -284,7 +309,7 @@
     .content {
       text-align: right;
       flex-direction: column;
-      padding: 260px 42px 40px;
+      padding: 260px 40px 40px;
       overflow: hidden;
 
       .content__title {
@@ -302,7 +327,8 @@
           margin: 0 0 204px auto;
           @extend %font-paragraph-l;
           color: $color-dark-s;
-          @media only screen and (max-width: $breakpoints_tablet) {
+          @media only screen and (max-width: $breakpoints_mobile) {
+            margin: 0 0 24px auto;
           }
         }
       }
@@ -325,7 +351,8 @@
 
       @media only screen and (max-width: $breakpoints_desktop) {
       }
-      @media only screen and (max-width: $breakpoints_tablet) {
+      @media only screen and (max-width: $breakpoints_mobile) {
+        padding: 440px $padding_mobile 40px;
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
@@ -349,7 +376,7 @@
   .clients__container {
     .content {
       text-align: center;
-      padding: 113px 182px 140px;
+      padding: 113px $padding_side 140px;
       overflow: hidden;
 
       .content__title {
@@ -367,24 +394,35 @@
           @media only screen and (max-width: $breakpoints_tablet) {
           }
         }
+        @media only screen and (max-width: $breakpoints_mobile) {
+          margin-bottom: 40px;
+        }
       }
       .content__icons {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         column-gap: 16px;
-
+        gap: 30px 20px;
+        flex-wrap: wrap;
         .content__icon {
-          display: flex;
-          column-gap: 6px;
-          align-items: center;
+          @media only screen and (max-width: $breakpoints_tablet) {
+            padding: 0 27px;
+          }
+        }
+        @media only screen and (max-width: $breakpoints_mobile) {
+          justify-content: center;
         }
       }
 
       @media only screen and (max-width: $breakpoints_desktop) {
-        padding: 113px 102px 140px;
+        padding: 113px $padding_destop 140px;
       }
       @media only screen and (max-width: $breakpoints_tablet) {
-        padding: 80px $padding_tablet 100px;
+        padding: 80px $padding_tablet 80px;
+      }
+      @media only screen and (max-width: $breakpoints_mobile) {
+        padding: 20px $padding_mobile 40px;
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
@@ -394,7 +432,7 @@
 
 .starfall {
   width: 100%;
-  background: url("../../assets/images/starfall.png") center / cover no-repeat;
+  background: url("../../assets/images/starfall.jpg") center / cover no-repeat;
   background-attachment: fixed;
   .starfall__wrapper {
     width: 100%;
@@ -410,7 +448,7 @@
     .content {
       text-align: right;
       flex-direction: column;
-      padding: 250px 42px 40px;
+      padding: 250px 40px 40px;
       overflow: hidden;
 
       .content__title {
@@ -428,7 +466,8 @@
           margin: 0 0 193px auto;
           @extend %font-paragraph-l;
           color: $color-dark-s;
-          @media only screen and (max-width: $breakpoints_tablet) {
+          @media only screen and (max-width: $breakpoints_mobile) {
+            margin: 0 0 24px auto;
           }
         }
       }
@@ -450,9 +489,10 @@
       }
 
       @media only screen and (max-width: $breakpoints_desktop) {
-        padding: 180px 42px 40px;
+        padding: 180px 40px 40px;
       }
-      @media only screen and (max-width: $breakpoints_tablet) {
+      @media only screen and (max-width: $breakpoints_mobile) {
+        padding: 419px $padding_mobile 40px;
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {
@@ -476,7 +516,7 @@
   .help__container {
     .content {
       text-align: center;
-      padding: 113px 182px 100px;
+      padding: 113px $padding_side 100px;
       overflow: hidden;
 
       .content__title {
@@ -518,7 +558,10 @@
       @media only screen and (max-width: $breakpoints_desktop) {
       }
       @media only screen and (max-width: $breakpoints_tablet) {
-        padding: 70px $padding_tablet 60px;
+        padding: 80px $padding_tablet 60px;
+      }
+      @media only screen and (max-width: $breakpoints_mobile) {
+        padding: 20px $padding_mobile 20px;
       }
     }
     @media only screen and (max-width: $breakpoints_desktop) {

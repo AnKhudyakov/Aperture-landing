@@ -1,3 +1,5 @@
+@import "./variables";
+
 %font-button {
   font-family: 'Poppins';
   font-style: normal;
@@ -5,6 +7,9 @@
   font-style: normal;
   font-size: 15px;
   line-height: 20px;
+  @media only screen and (max-width: $breakpoints_tablet) {
+    font-size: 12px;
+  }
 }
 
 %font-paragraph-l {
@@ -14,6 +19,9 @@
   font-size: 14px;
   line-height: 20px;
   color: #c0c0c0;
+  @media only screen and (max-width: $breakpoints_tablet) {
+    font-size: 12px;
+  }
 }
 
 %font-param-title {

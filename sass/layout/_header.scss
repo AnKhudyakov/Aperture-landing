@@ -15,11 +15,19 @@
   @media only screen and (max-width: $breakpoints_tablet) {
     padding: 0 $padding_tablet;
   }
+  @media only screen and (max-width: $breakpoints_mobile) {
+    height: 60px;
+    padding: 0 $padding_mobile;
+  }
 }
 
 .header__logo {
   display: flex;
   flex-direction: column;
+  
+  @media only screen and (max-width: $breakpoints_mobile) {
+    scale: 0.7;
+  }
 }
 
 .header__navbar {
@@ -32,7 +40,7 @@
     margin-bottom: 6px;
   }
   @media only screen and (max-width: $breakpoints_tablet) {
-   // display: none;
+    display: none;
   }
 }
 
@@ -43,31 +51,56 @@
   width: 30px;
   height: 22px;
   cursor: pointer;
-
+  .burger_wrapper {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -60%;
+    left: -35%;
+    @media only screen and (max-width: $breakpoints_tablet) {
+        &:hover {
+          border-radius: 50%;
+          background-color: $color-dark-s-activ;
+        }
+      
+        &:active {
+          border-radius: 50%;
+          background-color: $color-dark-s-activ;
+        }
+      
+        &.active {
+          border-radius: 50%;
+          background-color: $color-dark-s-activ;
+        }
+    }
+  }
   .burger_line {
-    background-color: $color-primary;
+    background-color: $color-dark-s;
     display: block;
     width: 100%;
     height: 2px;
     position: absolute;
+  }
 
-}
-
-.burger_line_one {
+  .burger_line_one {
     top: 0;
-}
+  }
 
-.burger_line_two,
-.burger_line_three {
+  .burger_line_two,
+  .burger_line_three {
     top: 50%;
     transform: translateY(-50%);
-}
+  }
 
-.burger_line_four {
+  .burger_line_four {
     bottom: 0;
-}
+  }
   @media only screen and (max-width: $breakpoints_tablet) {
-    //display: block;
+    display: block;
+  }
+  @media only screen and (max-width: $breakpoints_mobile) {
+    scale: 0.8;
+    margin-right: 20px;
   }
 }
 

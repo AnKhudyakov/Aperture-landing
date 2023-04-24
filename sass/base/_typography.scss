@@ -6,7 +6,7 @@ h1 {
   font-size: 54px;
   line-height: 110%;
   @media only screen and (max-width: $breakpoints_tablet) {
-
+    font-size: 40px;
   }
 }
 
@@ -17,7 +17,10 @@ h2 {
   font-size: 40px;
   line-height: 42px;
   @media only screen and (max-width: $breakpoints_tablet) {
-
+    font-size: 30px;
+  }
+  @media only screen and (max-width: $breakpoints_mobile) {
+    font-size: 28px;
   }
 }
 
@@ -28,7 +31,7 @@ h3 {
   font-size: 28px;
   line-height: 114%;
   @media only screen and (max-width: $breakpoints_tablet) {
-
+    font-size: 22px;
   }
 }
 
@@ -39,7 +42,10 @@ h4 {
   font-size: 24px;
   line-height: 125%;
   @media only screen and (max-width: $breakpoints_tablet) {
-
+    font-size: 18px;
+  }
+  @media only screen and (max-width: $breakpoints_mobile) {
+    font-size: 16px;
   }
 }
 
@@ -52,7 +58,7 @@ h5 {
   letter-spacing: 2px;
   text-transform: uppercase;
   @media only screen and (max-width: $breakpoints_tablet) {
-
+    font-size: 12px;
   }
 }
 
@@ -63,6 +69,6 @@ h6 {
   font-size: 13px;
   line-height: 20px;
   @media only screen and (max-width: $breakpoints_tablet) {
-
+    font-size: 12px;
   }
 }

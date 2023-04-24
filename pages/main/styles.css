@@ -393,6 +393,92 @@ h6 {
   }
 }
 
+#navigation-menu {
+  position: fixed;
+  top: 90px;
+  right: -100%;
+  width: 250px;
+  background-color: #181818;
+  z-index: 9999;
+  transition: right 0.5s ease-in-out;
+}
+#navigation-menu ul {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  row-gap: 30px;
+  font-size: 14px;
+  list-style-type: none;
+}
+@media only screen and (max-width: 485px) {
+  #navigation-menu ul {
+    padding: 20px;
+    row-gap: 20px;
+  }
+}
+@media only screen and (max-width: 485px) {
+  #navigation-menu {
+    width: 180px;
+    top: 60px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  #navigation-menu.open {
+    right: 0;
+  }
+}
+
+.burger-menu-icon {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #c0c0c0;
+  margin: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+.burger-menu-icon.burger-menu-icon--transparent {
+  background-color: transparent;
+}
+.burger-menu-icon:hover, .burger-menu-icon.burger-menu-icon--transparent:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.burger-menu-icon:active, .burger-menu-icon.burger-menu-icon--transparent:active {
+  background-color: #b2b2b2;
+}
+
+.burger-menu-icon::before,
+.burger-menu-icon::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #c0c0c0;
+  margin: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger-menu-icon::before {
+  transform: translateY(-20px);
+}
+
+.burger-menu-icon::after {
+  transform: translateY(8px);
+}
+
+#burger-menu-button.open .burger-menu-icon {
+  transform: rotate(45deg);
+}
+
+#burger-menu-button.open .burger-menu-icon::before {
+  transform: translateY(0) rotate(90deg);
+}
+
+#burger-menu-button.open .burger-menu-icon::after {
+  transform: translateY(0) rotate(-90deg);
+}
+
 .header-wrapper {
   max-width: 1440px;
   margin: auto;
@@ -455,16 +541,12 @@ h6 {
 }
 .header__burger .burger_wrapper {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   top: -60%;
-  left: -35%;
-}
-@media only screen and (max-width: 880px) {
-  .header__burger .burger_wrapper:hover {
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
-  }
+  left: -30%;
+  background-color: #181818;
+  border: 1px solid #181818;
 }
 .header__burger .burger_line {
   background-color: #c0c0c0;

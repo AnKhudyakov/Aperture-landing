@@ -31,12 +31,45 @@
             </picture>
           </a>
           <div class="header__burger">
-            <div class="burger_wrapper"></div>
-            <span class="burger_line burger_line_one"></span>
-            <span class="burger_line burger_line_two"></span>
-            <span class="burger_line burger_line_three"></span>
-            <span class="burger_line burger_line_four"></span>
+            <button
+              class="burger_wrapper"
+              id="burger-menu-button"
+              onclick="myFunction()"
+            >
+              <span class="burger-menu-icon"></span>
+            </button>
           </div>
+
+          <nav id="navigation-menu">
+            <ul>
+              <li>
+                <a href="#areas" class="navbar-link navbar-link_light active"
+                  >Business areas</a
+                >
+              </li>
+              <li>
+                <a href="#sunset" class="navbar-link navbar-link_light"
+                  >Featured images</a
+                >
+              </li>
+              <li>
+                <a href="#gear" class="navbar-link navbar-link_light"
+                  >Gear cage</a
+                >
+              </li>
+              <li>
+                <a href="#clients" class="navbar-link navbar-link_light"
+                  >Clients</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="navbar-link navbar-link_light"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+
           <nav class="header__navbar">
             <ul>
               <li>
@@ -629,6 +662,6 @@
         </div>
       </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="/js/modal.js"></script>
   </body>
 </html>

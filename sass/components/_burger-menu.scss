@@ -1,0 +1,84 @@
+#navigation-menu {
+  position: fixed;
+  top: 90px;
+  right: -100%;
+  width: 250px;
+  //height: 250px;
+  background-color: $color-primary;
+  z-index: 9999;
+  transition: right 0.5s ease-in-out;
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    row-gap: 30px;
+    font-size: 14px;
+    list-style-type: none;
+    @media only screen and (max-width: $breakpoints_mobile) {
+      padding: 20px;
+      row-gap: 20px;
+    }
+  }
+  @media only screen and (max-width: $breakpoints_mobile) {
+    width: 180px;
+    top: 60px;
+  }
+}
+
+#navigation-menu.open {
+  @media only screen and (max-width: $breakpoints_tablet) {
+    right: 0;
+  }
+}
+
+.burger-menu-icon {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: $color-dark-s;
+  margin: 8px;
+  transition: transform 0.3s ease-in-out;
+  &.burger-menu-icon--transparent {
+    background-color: transparent;
+  }
+  &:hover,
+  &.burger-menu-icon--transparent:hover {
+    cursor: pointer;
+    background-color: $color-dark-s-active;
+  }
+  &:active,
+  &.burger-menu-icon--transparent:active {
+    background-color: $color-dark-m;
+  }
+}
+
+.burger-menu-icon::before,
+.burger-menu-icon::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: $color-dark-s;
+  margin: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger-menu-icon::before {
+  transform: translateY(-20px);
+}
+
+.burger-menu-icon::after {
+  transform: translateY(8px);
+}
+
+#burger-menu-button.open .burger-menu-icon {
+  transform: rotate(45deg);
+}
+
+#burger-menu-button.open .burger-menu-icon::before {
+  transform: translateY(0) rotate(90deg);
+}
+
+#burger-menu-button.open .burger-menu-icon::after {
+  transform: translateY(0) rotate(-90deg);
+}

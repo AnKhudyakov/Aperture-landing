@@ -42,3 +42,13 @@ $padding_mobile: 30px;
     opacity: 1;
   }
 }
+
+@keyframes showTop {
+  from {
+    top: -100%;
+  }
+
+  to {
+    top: 0;
+  }
+}

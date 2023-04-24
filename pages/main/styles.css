@@ -14,6 +14,14 @@
     opacity: 1;
   }
 }
+@keyframes showTop {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
 .button {
   font-family: "Poppins";
   font-style: normal;
@@ -92,6 +100,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes showTop {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
   }
 }
 @font-face {
@@ -726,6 +742,7 @@ h6 {
   background-color: #181818;
   animation-duration: 2s;
   z-index: 999;
+  animation: showTop 2s;
 }
 
 .start {

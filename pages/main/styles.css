@@ -174,11 +174,11 @@ html {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  background-color: #181818;
 }
 
 /* set basic config for body */
 body {
+  background-color: #181818;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -739,7 +739,7 @@ h6 {
 
 .start {
   width: 100%;
-  margin-top: 85px;
+  padding-top: 85px;
   background: url("../../assets/images/bg-start.png") center/cover no-repeat;
   background-attachment: fixed;
 }
@@ -804,7 +804,7 @@ h6 {
 }
 @media only screen and (max-width: 485px) {
   .start {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
 

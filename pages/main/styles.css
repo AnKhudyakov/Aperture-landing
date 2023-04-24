@@ -465,14 +465,6 @@ h6 {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.2);
   }
-  .header__burger .burger_wrapper:active {
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  .header__burger .burger_wrapper.active {
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
-  }
 }
 .header__burger .burger_line {
   background-color: #c0c0c0;
@@ -635,7 +627,7 @@ h6 {
   justify-content: flex-end;
 }
 .footer .container__subscribe .subscribe__form .subscribe__input {
-  min-width: 458px;
+  width: 458px;
   position: absolute;
   padding: 15px;
   padding-right: 130px;
@@ -650,19 +642,19 @@ h6 {
 }
 @media only screen and (max-width: 1150px) {
   .footer .container__subscribe .subscribe__form .subscribe__input {
-    min-width: 400px;
+    width: 400px;
   }
 }
 @media only screen and (max-width: 880px) {
   .footer .container__subscribe .subscribe__form .subscribe__input {
     top: 0;
-    min-width: 340px;
+    width: 340px;
     padding-right: 110px;
   }
 }
 @media only screen and (max-width: 485px) {
   .footer .container__subscribe .subscribe__form .subscribe__input {
-    min-width: 260px;
+    width: 260px;
     padding: 5px 85px 5px 10px;
     border-radius: 8px;
   }

@@ -78,7 +78,7 @@
       position: relative;
       justify-content: flex-end;
       .subscribe__input {
-        min-width: 458px;
+        width: 458px;
         position: absolute;
         padding: 15px;
         padding-right: 130px;
@@ -94,15 +94,15 @@
          // outline-offset: 0;
         }
         @media only screen and (max-width: $breakpoints_desktop) {
-          min-width: 400px;
+          width: 400px;
         }
         @media only screen and (max-width: $breakpoints_tablet) {
           top:0;
-          min-width: 340px;
+          width: 340px;
           padding-right: 110px;
         }
         @media only screen and (max-width: $breakpoints_mobile) {
-          min-width: 260px;
+          width: 260px;
           padding: 5px 85px 5px 10px;
           border-radius: 8px;
         }

@@ -62,16 +62,14 @@
           border-radius: 50%;
           background-color: $color-dark-s-activ;
         }
-      
-        &:active {
-          border-radius: 50%;
-          background-color: $color-dark-s-activ;
-        }
-      
-        &.active {
-          border-radius: 50%;
-          background-color: $color-dark-s-activ;
-        }
+        // &:active {
+        //   border-radius: 50%;
+        //   background-color: $color-dark-s-activ;
+        // }
+        // &.active {
+        //   border-radius: 50%;
+        //   background-color: $color-dark-s-activ;
+        // }
     }
   }
   .burger_line {

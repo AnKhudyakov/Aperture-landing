@@ -656,7 +656,7 @@ h6 {
 }
 @media only screen and (max-width: 485px) {
   .header__burger {
-    scale: 0.8;
+    scale: 0.7;
     margin-right: 20px;
   }
 }

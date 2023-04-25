@@ -55,29 +55,28 @@
     position: absolute;
     width: 60px;
     height: 60px;
-    top: -60%;
-    left: -30%;
-    //border-radius: 50%;
-    background-color: $color-primary;
-    border: 1px solid $color-primary;
-    //transition: all 0.3s;
-    // @media only screen and (max-width: $breakpoints_tablet) {
-    //     &.burger_wrapper--transparent {
-    //       border-radius: 50%;
-    //       background-color: transparent;
-    //     }
-    //     &:hover,
-    //     &.burger_wrapper--transparent:hover {
-    //       z-index: 1000;
-    //       cursor: pointer;
-    //       background-color: $color-dark-s-active;
-    //     }
-    //     &:active,
-    //     &.burger_wrapper--transparent:active {
-    //       z-index: 1000;
-    //       background-color: $color-primary;
-    //     }
-    // }
+    top: -90%;
+    left: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    @media only screen and (max-width: $breakpoints_tablet) {
+        &.burger_wrapper--transparent {
+          background-color: transparent;
+        }
+        &:hover,
+        &.burger_wrapper--transparent:hover {
+          
+          cursor: pointer;
+          background-color: $color-dark-s-active;
+        }
+        &:active,
+        &.burger_wrapper--transparent:active {
+          
+          background-color: $color-primary;
+        }
+    }
   }
   .burger_line {
     background-color: $color-dark-s;

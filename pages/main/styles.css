@@ -326,9 +326,9 @@ h6 {
   letter-spacing: 0.06em;
   text-decoration: none;
   color: #292929;
-  background-color: #c0c0c0;
-  border: 2px solid #181818;
-  border-radius: 14px;
+  background-color: #fafafa;
+  border: 2px solid transparent;
+  border-radius: 12px;
   transition: all 0.3s;
   margin: 0;
   z-index: 2;
@@ -337,6 +337,7 @@ h6 {
   background-color: transparent;
 }
 .button:hover, .button.button--transparent:hover {
+  cursor: pointer;
   border-color: #b2b2b2;
   background-color: #b2b2b2;
 }
@@ -390,6 +391,31 @@ h6 {
 @media only screen and (max-width: 1150px) {
   .card {
     height: 350px;
+  }
+}
+
+.burger_wrapper {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: -90%;
+  left: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  z-index: 999;
+}
+@media only screen and (max-width: 880px) {
+  .burger_wrapper.burger_wrapper--transparent {
+    background-color: transparent;
+  }
+  .burger_wrapper:hover, .burger_wrapper.burger_wrapper--transparent:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .burger_wrapper:active, .burger_wrapper.burger_wrapper--transparent:active {
+    background-color: #181818;
   }
 }
 
@@ -453,16 +479,114 @@ h6 {
   transform: translateY(8px);
 }
 
-#burger-menu-button.open .burger-menu-icon {
+#burger-menu-button.open + .burger-menu-icon {
   transform: rotate(45deg);
 }
 
-#burger-menu-button.open .burger-menu-icon::before {
+#burger-menu-button.open + .burger-menu-icon::before {
   transform: translateY(0) rotate(90deg);
 }
 
-#burger-menu-button.open .burger-menu-icon::after {
+#burger-menu-button.open + .burger-menu-icon::after {
   transform: translateY(0) rotate(-90deg);
+}
+
+#modal-window {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(178, 178, 178, 0.5);
+  z-index: 9999;
+}
+
+#modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #181818;
+  border-radius: 12px;
+  padding: 40px;
+}
+#modal-content .modal-title {
+  text-align: center;
+  margin-bottom: 25px;
+  width: 458px;
+}
+@media only screen and (max-width: 1150px) {
+  #modal-content .modal-title {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  #modal-content .modal-title {
+    width: 340px;
+  }
+}
+@media only screen and (max-width: 485px) {
+  #modal-content .modal-title {
+    width: 260px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  #modal-content {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 485px) {
+  #modal-content {
+    padding: 15px;
+  }
+}
+
+#close-button {
+  margin-top: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.contact-form .contact-button {
+  margin: 0 auto;
+}
+
+.input {
+  width: 458px;
+  padding: 15px;
+  padding-right: 130px;
+  font-size: 15px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  z-index: 1;
+  outline: none;
+  border: 1px solid transparent;
+}
+.input:active, .input:hover, .input:focus {
+  border: 1px solid #b2b2b2;
+}
+@media only screen and (max-width: 1150px) {
+  .input {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .input {
+    top: 0;
+    width: 340px;
+    padding-right: 110px;
+  }
+}
+@media only screen and (max-width: 485px) {
+  .input {
+    width: 260px;
+    padding: 5px 85px 5px 10px;
+    border-radius: 8px;
+  }
 }
 
 .header-wrapper {
@@ -524,47 +648,6 @@ h6 {
   width: 30px;
   height: 22px;
   cursor: pointer;
-}
-.header__burger .burger_wrapper {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: -90%;
-  left: 0;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 1px solid transparent;
-  transition: all 0.3s;
-}
-@media only screen and (max-width: 880px) {
-  .header__burger .burger_wrapper.burger_wrapper--transparent {
-    background-color: transparent;
-  }
-  .header__burger .burger_wrapper:hover, .header__burger .burger_wrapper.burger_wrapper--transparent:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  .header__burger .burger_wrapper:active, .header__burger .burger_wrapper.burger_wrapper--transparent:active {
-    background-color: #181818;
-  }
-}
-.header__burger .burger_line {
-  background-color: #c0c0c0;
-  display: block;
-  width: 100%;
-  height: 2px;
-  position: absolute;
-}
-.header__burger .burger_line_one {
-  top: 0;
-}
-.header__burger .burger_line_two,
-.header__burger .burger_line_three {
-  top: 50%;
-  transform: translateY(-50%);
-}
-.header__burger .burger_line_four {
-  bottom: 0;
 }
 @media only screen and (max-width: 880px) {
   .header__burger {
@@ -708,49 +791,16 @@ h6 {
   position: relative;
   justify-content: flex-end;
 }
-.footer .container__subscribe .subscribe__form .subscribe__input {
-  width: 458px;
-  position: absolute;
-  padding: 15px;
-  padding-right: 130px;
-  font-size: 15px;
-  background-color: #f9fafb;
-  border-radius: 12px;
-  z-index: 1;
-  outline: none;
-}
-.footer .container__subscribe .subscribe__form .subscribe__input:active, .footer .container__subscribe .subscribe__form .subscribe__input:hover, .footer .container__subscribe .subscribe__form .subscribe__input:focus {
-  outline: none;
-}
-@media only screen and (max-width: 1150px) {
-  .footer .container__subscribe .subscribe__form .subscribe__input {
-    width: 400px;
-  }
-}
-@media only screen and (max-width: 880px) {
-  .footer .container__subscribe .subscribe__form .subscribe__input {
-    top: 0;
-    width: 340px;
-    padding-right: 110px;
-  }
-}
-@media only screen and (max-width: 485px) {
-  .footer .container__subscribe .subscribe__form .subscribe__input {
-    width: 260px;
-    padding: 5px 85px 5px 10px;
-    border-radius: 8px;
-  }
-}
 .footer .container__subscribe .subscribe__form .button {
   border: none;
-  position: relative;
+  position: absolute;
   z-index: 2;
   padding: 14px;
+  border: 1px solid #545454;
 }
 @media only screen and (max-width: 880px) {
   .footer .container__subscribe .subscribe__form .button {
     margin-left: 250px;
-    margin-top: 2px;
   }
 }
 @media only screen and (max-width: 485px) {
@@ -758,7 +808,6 @@ h6 {
     padding: 4px;
     border-radius: 8px;
     margin-left: 185px;
-    margin-top: 2px;
   }
 }
 @media only screen and (max-width: 880px) {

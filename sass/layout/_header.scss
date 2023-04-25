@@ -24,7 +24,7 @@
 .header__logo {
   display: flex;
   flex-direction: column;
-  
+
   @media only screen and (max-width: $breakpoints_mobile) {
     scale: 0.7;
   }
@@ -51,54 +51,7 @@
   width: 30px;
   height: 22px;
   cursor: pointer;
-  .burger_wrapper {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: -90%;
-    left: 0;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 1px solid transparent;
-    transition: all 0.3s;
-    @media only screen and (max-width: $breakpoints_tablet) {
-        &.burger_wrapper--transparent {
-          background-color: transparent;
-        }
-        &:hover,
-        &.burger_wrapper--transparent:hover {
-          
-          cursor: pointer;
-          background-color: $color-dark-s-active;
-        }
-        &:active,
-        &.burger_wrapper--transparent:active {
-          
-          background-color: $color-primary;
-        }
-    }
-  }
-  .burger_line {
-    background-color: $color-dark-s;
-    display: block;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-  }
 
-  .burger_line_one {
-    top: 0;
-  }
-
-  .burger_line_two,
-  .burger_line_three {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .burger_line_four {
-    bottom: 0;
-  }
   @media only screen and (max-width: $breakpoints_tablet) {
     display: block;
   }

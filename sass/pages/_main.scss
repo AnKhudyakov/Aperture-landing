@@ -14,6 +14,7 @@
   background: url("../../assets/images/bg-start.png") center / cover no-repeat;
   @extend %amination-fadeIn-second;
   background-attachment: fixed;
+
   .start__wrapper {
     width: 100%;
     max-width: $content-width;
@@ -105,6 +106,7 @@
       color: $color-light-xl;
       margin-bottom: 40px;
       animation-duration: 3s;
+
       .container__subtitle {
         margin-top: 14px;
         color: $color-dark-s;
@@ -117,6 +119,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
+
       .card {
         animation-duration: 3s;
       }
@@ -144,6 +147,7 @@
   width: 100%;
   background: url("../../assets/images/bg-sunset.jpg") center / cover no-repeat;
   background-attachment: fixed;
+
   .sunset__wrapper {
     width: 100%;
     max-width: $content-width;
@@ -155,6 +159,7 @@
     @media only screen and (max-width: $breakpoints_desktop) {
     }
   }
+
   .sunset__container {
     .content {
       text-align: right;
@@ -165,6 +170,7 @@
       .content__title {
         margin: 0 22px 0 auto;
         max-width: 298px;
+
         .content__subtitle {
           text-align: left;
           color: $color-dark-s;
@@ -213,6 +219,7 @@
 .gear {
   width: 100%;
   background-color: $color-secondary;
+
   .gear__wrapper {
     width: 100%;
     max-width: $content-width;
@@ -223,16 +230,19 @@
     @media only screen and (max-width: $breakpoints_desktop) {
     }
   }
+
   .gear__container {
     .content {
       display: grid;
       grid-template-columns: 1fr 1fr;
       text-align: right;
       overflow: hidden;
+
       .content__title {
         padding: 173px 100px 152px;
         text-align: left;
         animation-duration: 2s;
+
         .content__subtitle {
           color: $color-dark-s;
           margin-bottom: 6px;
@@ -265,6 +275,7 @@
           padding: 484px $padding_mobile 40px;
         }
       }
+
       .content__params {
         display: flex;
         justify-content: flex-end;
@@ -296,6 +307,7 @@
   width: 100%;
   background: url("../../assets/images/monstera.jpg") center / cover no-repeat;
   background-attachment: fixed;
+
   .monstera__wrapper {
     width: 100%;
     max-width: $content-width;
@@ -316,6 +328,7 @@
       .content__title {
         margin: 0 22px 0 auto;
         max-width: 298px;
+
         .content__subtitle {
           text-align: left;
           color: $color-dark-s;
@@ -364,6 +377,7 @@
 .clients {
   width: 100%;
   background-color: $color-secondary;
+
   .clients__wrapper {
     width: 100%;
     max-width: $content-width;
@@ -374,6 +388,7 @@
     @media only screen and (max-width: $breakpoints_desktop) {
     }
   }
+
   .clients__container {
     .content {
       text-align: center;
@@ -382,6 +397,7 @@
 
       .content__title {
         margin-bottom: 82px;
+
         .content__subtitle {
           color: $color-dark-s;
           margin-bottom: 15px;
@@ -406,6 +422,7 @@
         column-gap: 16px;
         gap: 30px 20px;
         flex-wrap: wrap;
+
         .content__icon {
           @media only screen and (max-width: $breakpoints_tablet) {
             padding: 0 27px;
@@ -435,6 +452,7 @@
   width: 100%;
   background: url("../../assets/images/starfall.jpg") center / cover no-repeat;
   background-attachment: fixed;
+
   .starfall__wrapper {
     width: 100%;
     max-width: $content-width;
@@ -455,6 +473,7 @@
       .content__title {
         margin: 0 22px 0 auto;
         max-width: 298px;
+
         .content__subtitle {
           text-align: left;
           color: $color-dark-s;
@@ -504,6 +523,7 @@
 .help {
   width: 100%;
   background-color: $color-secondary;
+
   .help__wrapper {
     width: 100%;
     max-width: $content-width;
@@ -523,17 +543,20 @@
       .content__title {
         text-align: center;
         animation-duration: 3s;
+
         .content__subtitle {
           margin: 0 auto;
           max-width: 572px;
           color: $color-dark-s;
           margin-bottom: 15px;
         }
+
         .content__button {
           display: flex;
           justify-content: center;
           margin-top: 20px;
         }
+
         .content__text {
           max-width: 580px;
           margin: 14px 0 20px;
@@ -544,6 +567,7 @@
           }
         }
       }
+
       .content__icons {
         display: flex;
         justify-content: space-between;

@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 34px;
+
     .container__title {
       @extend %footer__container;
       color: $color-light-xl;
@@ -24,22 +25,25 @@
     .container_lists {
       display: flex;
       column-gap: 16px;
+
       .container__list {
         min-width: 221px;
         @extend %footer__container;
         color: $color-light-xl;
         row-gap: 10px;
-        .container_link{
+
+        .container_link {
           max-width: fit-content;
         }
         @media only screen and (max-width: $breakpoints_desktop) {
           min-width: 180px;
         }
         @media only screen and (max-width: $breakpoints_tablet) {
-         min-width: 160px;
+          min-width: 160px;
         }
       }
-      .container__list:last-child{
+
+      .container__list:last-child {
         @media only screen and (max-width: $breakpoints_tablet) {
           min-width: 80px;
         }
@@ -64,6 +68,7 @@
     grid-template-columns: 2fr 1fr;
     padding: 36px 0;
     row-gap: 16px;
+
     .subscribe__text {
       display: flex;
       flex-direction: column;
@@ -72,55 +77,26 @@
         margin-bottom: 20px;
       }
     }
+
     .subscribe__form {
       display: flex;
       align-items: center;
       position: relative;
       justify-content: flex-end;
-      .subscribe__input {
-        width: 458px;
-        position: absolute;
-        padding: 15px;
-        padding-right: 130px;
-        font-size: 15px;
-        background-color: $color-light-l;
-        border-radius: 12px;
-        z-index: 1;
-        outline: none;
-        &:active,
-        &:hover,
-        &:focus {
-          outline: none;
-         // outline-offset: 0;
-        }
-        @media only screen and (max-width: $breakpoints_desktop) {
-          width: 400px;
-        }
-        @media only screen and (max-width: $breakpoints_tablet) {
-          top:0;
-          width: 340px;
-          padding-right: 110px;
-        }
-        @media only screen and (max-width: $breakpoints_mobile) {
-          width: 260px;
-          padding: 5px 85px 5px 10px;
-          border-radius: 8px;
-        }
-      }
+
       .button {
         border: none;
-        position: relative;
+        position: absolute;
         z-index: 2;
         padding: 14px;
+        border: 1px solid $color-dark-l;
         @media only screen and (max-width: $breakpoints_tablet) {
-          margin-left:  250px;
-          margin-top: 2px;
+          margin-left: 250px;
         }
         @media only screen and (max-width: $breakpoints_mobile) {
           padding: 4px;
           border-radius: 8px;
-          margin-left:  185px;
-          margin-top: 2px;
+          margin-left: 185px;
         }
       }
       @media only screen and (max-width: $breakpoints_tablet) {
@@ -136,20 +112,24 @@
   .container__devider {
     height: 2px;
   }
+
   .container__last {
     padding-top: 56px;
     display: flex;
     justify-content: space-between;
+
     .container__license {
       @extend %font-paragraph-l;
       @media only screen and (max-width: $breakpoints_tablet) {
-       margin-right: 15px;
+        margin-right: 15px;
       }
     }
+
     .content__icons {
       display: flex;
       column-gap: 20px;
-      .content__icon{
+
+      .content__icon {
         text-align: center;
         width: 24px;
       }

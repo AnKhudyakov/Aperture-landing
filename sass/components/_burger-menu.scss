@@ -1,3 +1,32 @@
+.burger_wrapper {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: -90%;
+  left: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  z-index: 999;
+  @media only screen and (max-width: $breakpoints_tablet) {
+    &.burger_wrapper--transparent {
+      background-color: transparent;
+    }
+
+    &:hover,
+    &.burger_wrapper--transparent:hover {
+      cursor: pointer;
+      background-color: $color-dark-s-active;
+    }
+
+    &:active,
+    &.burger_wrapper--transparent:active {
+      background-color: $color-primary;
+    }
+  }
+}
+
 #navigation-menu {
   position: fixed;
   top: 90px;
@@ -7,6 +36,7 @@
   background-color: $color-primary;
   z-index: 9999;
   transition: right 0.5s ease-in-out;
+
   ul {
     display: flex;
     flex-direction: column;
@@ -38,44 +68,35 @@
   background-color: $color-dark-s;
   margin: 8px;
   transition: transform 0.3s ease-in-out;
-  // &.burger-menu-icon--transparent {
-  //   background-color: transparent;
-  // }
-  // &:hover,
-  // &.burger-menu-icon--transparent:hover {
-  //   cursor: pointer;
-  //   background-color: $color-dark-s-active;
-  // }
-  // &:active,
-  // &.burger-menu-icon--transparent:active {
-  //   background-color: $color-dark-m;
-  // }
+
   &::before,
   &::after {
     content: "";
-  display: block;
-  width: 30px;
-  height: 4px;
-  background-color: $color-dark-s;
-  margin: 8px;
-  transition: transform 0.3s ease-in-out;
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: $color-dark-s;
+    margin: 8px;
+    transition: transform 0.3s ease-in-out;
   }
+
   &::before {
     transform: translateY(-20px);
   }
+
   &::after {
     transform: translateY(8px);
   }
 }
 
-#burger-menu-button.open .burger-menu-icon {
+#burger-menu-button.open + .burger-menu-icon {
   transform: rotate(45deg);
 }
 
-#burger-menu-button.open .burger-menu-icon::before {
+#burger-menu-button.open + .burger-menu-icon::before {
   transform: translateY(0) rotate(90deg);
 }
 
-#burger-menu-button.open .burger-menu-icon::after {
+#burger-menu-button.open + .burger-menu-icon::after {
   transform: translateY(0) rotate(-90deg);
 }

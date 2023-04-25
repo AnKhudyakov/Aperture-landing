@@ -14,12 +14,14 @@
     top: 0;
     left: 0;
     z-index: 1;
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center;
       transition: 1s;
+
       &:hover {
         transform: scale(1.1);
       }

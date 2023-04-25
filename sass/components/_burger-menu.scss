@@ -9,7 +9,7 @@
   border: 1px solid transparent;
   transition: all 0.3s;
   z-index: 999;
-  @media only screen and (max-width: $breakpoints_tablet) {
+  @media only screen and (max-width: $breakpoints_tablet) and (hover: hover) {
     &.burger_wrapper--transparent {
       background-color: transparent;
     }

@@ -369,8 +369,10 @@ h6 {
   object-position: center;
   transition: 1s;
 }
-.card .card__image img:hover {
-  transform: scale(1.1);
+@media only screen and (hover: hover) {
+  .card .card__image img:hover {
+    transform: scale(1.1);
+  }
 }
 .card .card__text {
   z-index: 2;

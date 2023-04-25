@@ -21,9 +21,10 @@
       object-fit: cover;
       object-position: center;
       transition: 1s;
-
-      &:hover {
-        transform: scale(1.1);
+      @media only screen and (hover: hover) {
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }

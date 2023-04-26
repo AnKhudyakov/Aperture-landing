@@ -100,6 +100,7 @@
 .areas {
   padding: 113px $padding_side 100px;
   background-color: $color-secondary;
+  overflow: hidden;
   .areas__container {
     .container__title {
       text-align: center;

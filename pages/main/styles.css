@@ -944,6 +944,7 @@ h6 {
 .areas {
   padding: 113px 136px 100px;
   background-color: #000000;
+  overflow: hidden;
 }
 .areas .areas__container .container__title {
   text-align: center;

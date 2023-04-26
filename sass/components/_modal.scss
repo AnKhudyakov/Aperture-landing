@@ -17,7 +17,7 @@
   background-color: $color-primary;
   border-radius: 12px;
   padding: 40px;
-
+  @extend %amination-fadeIn-first;
   .modal-title {
     text-align: center;
     margin-bottom: 25px;

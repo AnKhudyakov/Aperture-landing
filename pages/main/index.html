@@ -7,14 +7,6 @@
     <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
     <link rel="stylesheet" href="../../normalize.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <script src="../../js/wow.min.js"></script>
-    <script>
-      new WOW({ mobile: true }).init();
-    </script>
     <title>Aperture</title>
   </head>
   <body>
@@ -102,16 +94,19 @@
         <div class="start__bg-wrapper"></div>
         <div class="start__container">
           <div class="content">
-            <h5 class="content__subtitle">Photographer & Filmmaker</h5>
-            <div class="content__title">
-              <h1>Aperture Studios</h1>
+            <div class="animate__fadeInUp-to">
+              <h5 class="content__subtitle">Photographer & Filmmaker</h5>
+              <div class="content__title">
+                <h1>Aperture Studios</h1>
+              </div>
+              <p class="content__text">
+                Welcome to Aperture Studios – a premier photographer and
+                filmmaker studio that specializes in capturing life's most
+                precious moments. With over 10 years of experience, we pride
+                ourselves on delivering stunning visuals and exceptional service
+                to all of our clients.
+              </p>
             </div>
-            <p class="content__text">
-              Welcome to Aperture Studios – a premier photographer and filmmaker
-              studio that specializes in capturing life's most precious moments.
-              With over 10 years of experience, we pride ourselves on delivering
-              stunning visuals and exceptional service to all of our clients.
-            </p>
             <div class="content__params">
               <div class="content__param">
                 <picture>
@@ -159,17 +154,14 @@
       </section>
       <section class="areas" id="areas">
         <div class="areas__container">
-          <div class="container__title wow animate__animated animate__fadeInUp">
+          <div class="container__title animate__fadeInUp-from-first">
             <h2>What we do.</h2>
             <h4 class="container__subtitle">
               The areas that we're specialized in.
             </h4>
           </div>
           <div class="container__cards">
-            <div
-              class="card wow animate__animated animate__fadeInLeft"
-              id="product"
-            >
+            <div class="card animate__fadeInLeft-first" id="product">
               <picture class="card__image">
                 <img src="../../assets/images/product.png" alt="product" />
               </picture>
@@ -181,10 +173,7 @@
               </p>
               <button class="button" id="modal-button">Read more</button>
             </div>
-            <div
-              class="card wow animate__animated animate__fadeInRight"
-              id="arch"
-            >
+            <div class="card animate__fadeInRight-first" id="arch">
               <picture class="card__image">
                 <img
                   src="../../assets/images/architecture.png"
@@ -200,10 +189,7 @@
               </p>
               <button class="button" id="modal-button">Read more</button>
             </div>
-            <div
-              class="card wow animate__animated animate__fadeInLeft"
-              id="drone"
-            >
+            <div class="card animate__fadeInLeft-second" id="drone">
               <picture class="card__image">
                 <img src="../../assets/images/drone.png" alt="drone" />
               </picture>
@@ -217,10 +203,7 @@
               </p>
               <button class="button" id="modal-button">Read more</button>
             </div>
-            <div
-              class="card wow animate__animated animate__fadeInRight"
-              id="wildlife"
-            >
+            <div class="card animate__fadeInRight-second" id="wildlife">
               <picture class="card__image">
                 <img src="../../assets/images/wildlife.png" alt="wildlife" />
               </picture>
@@ -297,9 +280,7 @@
         <div class="gear__wrapper">
           <div class="gear__container">
             <div class="content">
-              <div
-                class="content__title wow animate__animated animate__fadeInLeft"
-              >
+              <div class="content__title animate__fadeInLeft-third">
                 <h5 class="content__subtitle">The Gear cage</h5>
                 <h3>The tools that we use.</h3>
                 <p class="content__text">
@@ -311,9 +292,7 @@
                 </p>
                 <button class="button" id="modal-button">Read more</button>
               </div>
-              <div
-                class="content__image wow animate__animated animate__fadeInRight"
-              >
+              <div class="content__image animate__fadeInRight-third">
                 <div class="content__params">
                   <div class="content__param">
                     <picture>
@@ -422,20 +401,12 @@
         <div class="clients__wrapper">
           <div class="clients__container">
             <div class="content">
-              <div class="content__title">
-                <h2
-                  class="content__subtitle wow animate__animated animate__fadeInUp"
-                >
-                  Past clients
-                </h2>
-                <h4 class="wow animate__animated animate__fadeInUp">
-                  Trusted by your favourite companies
-                </h4>
+              <div class="content__title animate__fadeInUp-from-second">
+                <h2 class="content__subtitle">Past clients</h2>
+                <h4>Trusted by your favourite companies</h4>
               </div>
 
-              <div
-                class="content__icons wow animate__animated animate__fadeInUp"
-              >
+              <div class="content__icons animate__fadeInUp-from-second">
                 <div class="content__icon">
                   <picture>
                     <img
@@ -545,11 +516,9 @@
       </section>
       <section class="help" id="help">
         <div class="help__wrapper">
-          <div class="help__container">
+          <div class="help__container animate__fadeInUp-from-third">
             <div class="content">
-              <div
-                class="content__title wow animate__animated animate__fadeInUp"
-              >
+              <div class="content__title">
                 <h2 class="content__subtitle">
                   Need help with photography or videography?
                 </h2>
@@ -682,6 +651,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="../../js/index.js"></script>
+    <script src="../../js/gsap.js"></script>
   </body>
 </html>

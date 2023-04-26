@@ -11,6 +11,12 @@
 .start {
   width: 100%;
   padding-top: 85px;
+  background: url("../../assets/images/bg-start.jpg") center / cover no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   @extend %amination-fadeIn-second;
 
   .start__wrapper {
@@ -144,6 +150,12 @@
 
 .sunset {
   width: 100%;
+  background: url("../../assets/images/bg-sunset.jpg") center / cover no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   .sunset__wrapper {
     width: 100%;
@@ -302,7 +314,13 @@
 
 .monstera {
   width: 100%;
-
+  background: url("../../assets/images/monstera.jpg") center / cover no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
   .monstera__wrapper {
     width: 100%;
     max-width: $content-width;
@@ -445,7 +463,13 @@
 
 .starfall {
   width: 100%;
-
+  background: url("../../assets/images/starfall.jpg") center / cover no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
   .starfall__wrapper {
     width: 100%;
     max-width: $content-width;

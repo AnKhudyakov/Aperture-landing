@@ -874,6 +874,12 @@ h6 {
 .start {
   width: 100%;
   padding-top: 85px;
+  background: url("../../assets/images/bg-start.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .start .start__wrapper {
   width: 100%;
@@ -987,6 +993,12 @@ h6 {
 
 .sunset {
   width: 100%;
+  background: url("../../assets/images/bg-sunset.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .sunset .sunset__wrapper {
   width: 100%;
@@ -1111,6 +1123,12 @@ h6 {
 }
 .monstera {
   width: 100%;
+  background: url("../../assets/images/monstera.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .monstera .monstera__wrapper {
   width: 100%;
@@ -1230,6 +1248,12 @@ h6 {
 }
 .starfall {
   width: 100%;
+  background: url("../../assets/images/starfall.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .starfall .starfall__wrapper {
   width: 100%;

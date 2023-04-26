@@ -90,13 +90,14 @@
 }
 
 #burger-menu-button.open + .burger-menu-icon {
-  transform: rotate(45deg);
+  transform: translateX(8px) rotate(45deg);
 }
 
 #burger-menu-button.open + .burger-menu-icon::before {
-  transform: translateY(0) rotate(90deg);
+  transform: translate(-8px) rotate(90deg);
 }
 
 #burger-menu-button.open + .burger-menu-icon::after {
+  display: none;
   transform: translateY(0) rotate(-90deg);
 }

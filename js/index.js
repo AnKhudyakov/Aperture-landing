@@ -29,3 +29,18 @@ modalButtons.forEach(function (button) {
 closeButton.addEventListener("click", () => {
   modalWindow.style.display = "none";
 });
+
+// parallax
+
+const start = document.querySelector(".start");
+const sunset = document.querySelector(".sunset");
+const monstera = document.querySelector(".monstera");
+const starfall = document.querySelector(".starfall");
+
+if (!(/iPhone|iPad|iPod/i.test(navigator.userAgent))) {
+  console.log("yes");
+  start.style.backgroundAttachment = "fixed";
+  sunset.style.backgroundAttachment = "fixed";
+  monstera.style.backgroundAttachment = "fixed";
+  starfall.style.backgroundAttachment = "fixed";
+}
